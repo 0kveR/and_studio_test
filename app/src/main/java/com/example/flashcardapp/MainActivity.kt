@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
         val resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             val data: Intent? = result.data
 
-            // TODO: Extract Data
             if (data != null) {
                 val questionString = data.getStringExtra("Question")
                 val answerString = data.getStringExtra("Answer")
